@@ -1,0 +1,11 @@
+#
+#Fri Feb 09 09:18:41 UTC 2018
+Description=DevX DI backend
+Type=HTTP
+Authentication=AppToAppSSO
+WebIDEUsage=true
+Name=webide_di
+WebIDEEnabled=true
+ProxyType=Internet
+URL=https\://disapwebide-<your_trial_account>.hanatrial.ondemand.com/
+PropagateAccount=true
