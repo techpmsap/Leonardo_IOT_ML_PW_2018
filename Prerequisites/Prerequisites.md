@@ -9,7 +9,6 @@
 In this exercise, you’ll go through the basic steps of setting up the development environment required for SAP Leonardo and SAP Cloud Platform workshop.  
 
 
-
 ## Target group
 
 * Application Developers
@@ -21,10 +20,8 @@ In this exercise, you’ll go through the basic steps of setting up the developm
 The goal of this exercise is to have your workstation/laptop well prepared in order to attend to the SAP Leonardo and SAP Cloud Platform workshop.  
 
 
-
 ## Prerequisites
   
-
 Below are prerequisites required for the exercises in this workshop.  
 
 
@@ -39,23 +36,20 @@ Below are prerequisites required for the exercises in this workshop.
   
 
 ## <a name="laptop"></a> Bring Your Own Laptop with Admin Access
-
  
 Please bring the laptop that you have admin access for hands-on exercises.   
 
-## <a name="rdc"></a> Remote Desktop Connection
 
+## <a name="rdc"></a> Remote Desktop Connection
  
 In order to connect with the Virtual Machines we have prepared for you, you need to have the Remote Desktop Connection (RDC) tool installed on your machine. For Windows users, RDC comes already installed, so if you have Windows you don't have to worry about it. If you are MAC user, instead, you can download it for free from the Mac App Store.  
 	![](images/01.png)
-
 
 
 ## <a name="install-java-jdk"></a>Install Java JRE
 
 1.	Download and install Java JRE from this link <https://www.java.com/en/>  
 	![](images/05.png)
-
 
 
 ## <a name="sign-up-neo"></a>Sign up for SAP Cloud Platform Neo trial account
@@ -79,7 +73,6 @@ You need Neo trial SAP Cloud Platform to complete some of the hands-on exercises
 	
 	>NOTE: Please, if possible, enable Portal as first service.
 
-
         
 ## <a name="sign-up-cf"></a>Sign up for SAP Cloud Platform Cloud Foundry trial account
 Sign up also for SAP Cloud Platform Cloud Foundry trial account.
@@ -90,7 +83,6 @@ Sign up also for SAP Cloud Platform Cloud Foundry trial account.
 	![](images/16.png)	 
 1.	Make sure you have **2GB Memory** for the space.  If you don’t have 2GB Memory, please register a new account.  
 	![](images/17.png)
-
 
 
 ## <a name="install-cf-cli"></a> Install Cloud Foundry CLI
@@ -109,8 +101,6 @@ For the workshop exercises you need to install the **Postman** application for C
 	![](images/25.png)
 
 
-
-
 ## <a name="postman-interceptor"></a> Install Chrome Postman Interceptor application
 Another required tool is the Postman Interceptor app for Chrome. This can be found on the Chrome Web Store.
 
@@ -119,8 +109,6 @@ Another required tool is the Postman Interceptor app for Chrome. This can be fou
 
 1. Click **Add to Chrome**  
 	![](images/27.png)
-
-
 
 
 ## Summary
