@@ -42,9 +42,9 @@ Here below are prerequisites for this exercise.
 * A trial account on the SAP Cloud Platform. You can get one by registering here <https://account.hanatrial.ondemand.com>
 * You must have completed previous exercises
 * MLFSAPUI5\_Project\_Exercises.zip (already imported in SAP Web IDE Full-Stack)
-* The [mnist.zip](files/mnist.zip)
-* A folder with the unzipped inference app [inference\_app.zip](files/inference_app.zip)
-* A folder with the unzipped test image files [test\_images\_byom.zip](files/test_images_byom.zip)
+* The [mnist.zip](files/mnist.zip?raw=true)
+* A folder with the unzipped inference app [inference\_app.zip](files/inference_app.zip?raw=true)
+* A folder with the unzipped test image files [test\_images\_byom.zip](files/test_images_byom.zip?raw=true)
 
 |Parameter   |Value                                                |
 |------------|-----------------------------------------------------|
@@ -80,7 +80,7 @@ In this section, you will take a prepared tensorflow model and upload it to the 
 	|Parameter|Value|
 	|---------|-----|
 	| modelName| enter a name of your choice, for example **mnist\_model\_XX** where **XX** is your workstation ID|
-	|File|select the [mnist.zip](files/mnist.zip) file you have downloaded in the prerequisites|
+	|File|select the [mnist.zip](files/mnist.zip?raw=true) file you have downloaded in the prerequisites|
 	|Authorization|enter your token generated with the Access Token tool|  
 
 	Click on **Try it out!** to upload your model  	![](images/04.png)
@@ -145,7 +145,7 @@ In this section, you will take a prepared tensorflow model and upload it to the 
 ### <a name="expose-model"></a> Expose your Model with an API (Inference App)
 In the next section, you will adjust a prepared inference app with your destinations and credentials. It will then be deployed to you SCP Cloud Foundry space. This step is needed to expose you model via a REST API or URL that can later be used in an application for the inference phase.
 
-1. Download the [inference_app.zip](files/inference_app.zip) and extract it in a proper folder on your machine
+1. Download the [inference_app.zip](files/inference_app.zip?raw=true) and extract it in a proper folder on your machine
 	![](images/15.png)
 1. Open the *manifest.yml* file with your favourite editor: it should look like this
 
