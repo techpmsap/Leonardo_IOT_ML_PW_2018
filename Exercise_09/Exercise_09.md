@@ -68,12 +68,13 @@ In this section, you will take a prepared tensorflow model and upload it to the 
 	
 1.	Navigate in the SCP Cloud Foundry Cockpit to your **Service Key**. Select the **Model Repo URL** and copy it  
 	![](images/01.png)
+
 1.	Open a new browser window and paste the copied URL. A Swagger UI is opened up  
 	![](images/02.png)
 
 	>Note: it might change in the future	 
 
-1.	Open the first entry **models-controller** and select the POST URL  	![](images/03.png)
+1.	Open the branch **model-versions-controller-impl** and select the **POST** request  	![](images/03.png)
 	 
 1.	This UI provides the function to upload your own model. Enter the following parameters:
 
@@ -89,21 +90,22 @@ In this section, you will take a prepared tensorflow model and upload it to the 
 	![](images/05.png)
 
 1. At the end of the process, which could also take a few minutes, you should get a **Response Code** of **201**
-	![](images/05_2.png)
-
-1.	In the Response Body you should get an answer like the one in the screenshot where you can see that the **modelStatus** is still **INACTIVE**. We will now deploy the model to the ML Foundation model repository. Note down the **modelName** and the **version**, because you will need it in the next steps  
 	![](images/06.png)
+
+1.	In the Response Body you should get an answer like the one in the screenshot where you can read the **modelName** and the **version**. Write down these two because you will need it in the next steps when we will deploy the model to the ML Foundation model repository  
+	![](images/07.png)
 	 
 1.	Navigate in the SCP Cloud Foundry Cockpit to your Service Key. Select the Deployment URL and copy it in the clipboard	 
-	![](images/07.png)
+	![](images/08.png)
+
 1.	Open a new browser window, paste and open the copied Deployment URL. A Swagger UI is opened up  
 
-	![](images/08.png)
+	![](images/09.png)
 	
 	>Note: it might change in the future	 
 	 
 1.	Select the Deploy Model Controller - POST method. 
-	![](images/09.png)
+	![](images/10.png)
 
 1.	This UI provides the function to deploy the model you have uploaded previously. Enter the following parameters:
 
@@ -115,14 +117,14 @@ In this section, you will take a prepared tensorflow model and upload it to the 
 	```json
 	{
 	 "modelName": "<<< model_name >>", 
-	 "version": "<<< version_number >>>"
+	 "modelVersion": "<<< version_number >>>"
 	}
 	```
-	Click on **Try it out!** to deploy your model  	![](images/10.png)
+	Click on **Try it out!** to deploy your model  	![](images/11.png)
 
 
-1.	You will get a Response Body similar to the one in the screenshot. The status will be **PENDING** at the beginning. 	 
-	![](images/11.png)
+1.	You will get a Response Body similar to the one in the screenshot. The status will be **PENDING** at the beginning and the Response Code will be **202** 	 
+	![](images/12.png)
 
 1.	Within the same Deployment API URL page, select the **GET** method. Enter the following parameters and click on the **Try it out!** button to check the deployment status
 
@@ -131,11 +133,9 @@ In this section, you will take a prepared tensorflow model and upload it to the 
 	|modelName| the name of your model |
 	|Authorization|the token generated with the Access Token tool|  
 
-	![](images/12.png)
-
-1.	Initially you might still get the **PENDING** status
 	![](images/13.png)
-1. Please repeat that step until you get a response with the **deploymentStatus** as **SUCCEEDED**. Please keep this window open as you need some information in the next step
+
+1.	Initially you might still get the **PENDING** status: please repeat that step until you get a response with the **deploymentStatus** as **SUCCEEDED**. Please keep this window open as you need some information in the next step
 	![](images/14.png)
 
 
@@ -147,6 +147,7 @@ In the next section, you will adjust a prepared inference app with your destinat
 
 1. Download the [inference_app.zip](files/inference_app.zip?raw=true) and extract it in a proper folder on your machine
 	![](images/15.png)
+
 1. Open the *manifest.yml* file with your favourite editor: it should look like this
 
 	```yml
@@ -210,7 +211,8 @@ To test your new model. We prepared a SAPUI5 app that will point to your inferen
 
 1.	Open your SAP WebIDE Full-Stack edition. Navigate to your project that you previously imported before
 	![](images/20.png)
-1.	Select the name of the project and execute the app by pressing the Run button on the toolbar
+
+1.	Select the name of the project and execute the app by pressing the **Run** button on the toolbar
 	![](images/21.png)
 
 1. An application with two tiles comes up. Select the tile with the title **Bring your own Model** 
@@ -218,15 +220,17 @@ To test your new model. We prepared a SAPUI5 app that will point to your inferen
 
 1.	Here you need to enter the two things: the URL of your deployed inference app as this is your exposed API endpoint and the image you want to process
 	![](images/23.png)
-1. Copy and paste the routes URL from the terminal window into the Inference URL textbox by prefixing this URL with "https://"; thenk click **Browse**
+
+1. Copy and paste the routes URL from the terminal window into the Inference URL textbox by prefixing this URL with "https://"; then click **Browse**
 	![](images/24.png)
+
 1. Select an image from the folder *test\_images\_byom* folder you have already downloaded as explained in the prerequisites
 	![](images/25.png)
 
 1.	Click on **Analyze!** to test your model. 
 	![](images/26.png)
 
-1.	You should get an output that says Result <number> as shown on the screenshot here
+1.	You should get an output that says Result \<number\> as shown on the screenshot here
 	![](images/27.png)
 
 
