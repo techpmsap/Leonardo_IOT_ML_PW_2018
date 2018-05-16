@@ -198,7 +198,7 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 	}
 	```
 
-1. Replace the **sensorAlternateId** with the **Alternate ID** you can read by going on your **Soil_Sensor** in your **Paho Client**  
+1. Replace the **<<< Sensor Alternate ID >>>** with the **Alternate ID** you can read by going on your **Soil_Sensor** in your **Paho_Client_XX** device 
 	![](images/33.png)
 
 1. Then go to **Sensor Types -> Soil_SensorTypeXX**  
