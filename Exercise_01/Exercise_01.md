@@ -66,7 +66,8 @@ Centralized Device data model provides the schema of device related configuratio
 |Data Type|float|
 |Unit Of Measure|pH|
 ![](images/04.png)
-1.	Once again navigate to Capabilities section and click on the "+" sign to add the second capability Soil_Moisture.   
+1.	Once again navigate to Capabilities section and click on the "+" sign to add the second capability Soil_Moisture.
+![](images/05.png)   
 1. In the **General information** section enter Name as Soil_Moisture and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
 |Parameter|Value|
 |---------|-----|
@@ -80,8 +81,9 @@ Centralized Device data model provides the schema of device related configuratio
 |---------|-----|
 |Name|Water\_alert|
 |Data Type|string|
-![](images/07.png)
+![](images/08.png)
 1. Navigate toe Device Management-> Sensor Types and click on the "+" sign to add a sensor type for the Soil Sensor Type.
+![](images/09.png)
 1. In the **General information** section enter Name as Soil_SensorTypeXX, where XX is the group number and in the Capabilities section enter and add the earlier created capabilities.
 |Capability|Type|
 |---------|-----|
