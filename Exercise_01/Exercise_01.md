@@ -58,14 +58,14 @@ Centralized Device data model provides the schema of device related configuratio
 1.	Open the browser and navigate to the IoT Service Cockpit URL and log on with the tenant user credentials, provided by the instructor
 ![](images/02.png)
 1.	Use the main menu to navigate to the Device Management -> Capabilities section and click on the "+" sign to add new capabilities like Soil pH and Soil Moisture
-	![](images/04.png)
+	![](images/03.png)
 1. In the **General information** section enter Name as Soil_pH and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
 |Parameter|Value|
 |---------|-----|
 |Name|Soil\_pH|
 |Data Type|float|
 |Unit Of Measure|pH|
-![](images/03.png)
+![](images/04.png)
 1.	Once again navigate to Capabilities section and click on the "+" sign to add the second capability Soil_Moisture.   
 1. In the **General information** section enter Name as Soil_Moisture and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
 |Parameter|Value|
@@ -73,7 +73,7 @@ Centralized Device data model provides the schema of device related configuratio
 |Name|Soil\_Moisture|
 |Data Type|float|
 |Unit Of Measure|%|
-![](images/05.png)
+![](images/06.png)
 1.	Once again navigate to Capabilities section and click on the "+" sign to add the command Water_Alert.   
 1. In the **General information** section enter Name as Water_Alert and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
 |Parameter|Value|
@@ -194,7 +194,8 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 	"measures":[7,35,"demo"],
 	"sensorAlternateId":"<<< Sensor Alternate ID >>>"
 	}
-```
+	```
+
 1. Replace the **sensorAlternateId** with the **Alternate ID** you can read by going on your **Soil_Sensor** in your **Paho Client**  
 	![](images/33.png)
 
