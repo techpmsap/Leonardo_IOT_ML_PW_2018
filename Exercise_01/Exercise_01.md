@@ -68,6 +68,7 @@ Centralized Device data model provides the schema of device related configuratio
 	| Name | Soil \_pH     |
 	| Data Type | float    |
 	| Unit Of Measure | pH |
+	
 	![](images/04.png)
 
 1.	Once again navigate to **Capabilities** section and click on the "**+**" sign to add the second capability **Soil_Moisture**  
@@ -80,6 +81,7 @@ Centralized Device data model provides the schema of device related configuratio
 	| Name | Soil \_Moisture |
 	| Data Type | float      |
 	| Unit Of Measure | %    |
+	
 	![](images/06.png)
 
 1.	Once again navigate to **Capabilities** section and click on the "**+**" sign to add the command Water_Alert  
@@ -90,6 +92,7 @@ Centralized Device data model provides the schema of device related configuratio
 	| --------- | ------- |
 	| Name | Water\_alert |
 	| Data Type | string  |
+	
 	![](images/08.png)
 
 1. Navigate to **Device Management -> Sensor Types** and click on the "**+**" sign to add a sensor type for the Soil Sensor Type  
@@ -102,6 +105,7 @@ Centralized Device data model provides the schema of device related configuratio
 	| Soil_pH | measure       |
 	| Soil_Moisture | measure |
 	| Water_Alert | command   |
+	
 	![](images/10.png)
 	![](images/11.png)
 	
