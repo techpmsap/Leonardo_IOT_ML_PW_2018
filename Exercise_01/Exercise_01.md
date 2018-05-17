@@ -47,7 +47,7 @@ Here below are prerequisites for this exercise.
 
 
 ### <a name="introduction"></a> Introduction
-The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. IoT Services provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides on-premise IoT edge processing and also gateway cloud which does centralized cloud based processing. The **IoT cockpit** is the user interface of the solution and provides access to various functions. It is the main interface for users to interact with the Internet of Things core service. It can be used for creating users and tenants, for creating device data models, for device onboarding and for adding new networks. It can also be used to deploy interceptors, retrieve network logs, visualize the data which are being ingested via IoT devices/sensors.
+The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. IoT Services provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides on-premise IoT edge processing and also gateway cloud which does centralized cloud based processing. The **IoT cockpit** is the user interface of the solution and provides access to various functions. It is the main interface for users to interact with the Internet of Things core service. It can be used for creating users and tenants, for creating device data models, for device onboarding and for adding new networks. It can also be used to deploy interceptors, retrieve network logs, visualize the data which are being ingested via IoT devices/sensors.  
 	![](images/01.png)
 
 
@@ -55,44 +55,57 @@ The SAP Cloud Platform Internet of Things Service enables customers and partners
 ### <a name="creating-device-data-model"></a> Creating device data model
 Centralized Device data model provides the schema of device related configurations including the data fields that will be exchanged. Default template is provided and can be downloaded from the SAP Cloud Platform Internet of Things services cockpit. If you have any deviations or additions, a new sensor type can be added to the default central data model. In the below steps, we will extend this default central device data model with the new fields "Soil pH and Moisture" that we will be getting from the device simulator. In this section, you will create few capabilities (measures and commands). A capability can be reused since it can be assigned to multiple sensor types: each capability can have one or many properties.
 
-1.	Open the browser and navigate to the IoT Service Cockpit URL and log on with the tenant user credentials, provided by the instructor
-![](images/02.png)
-1.	Use the main menu to navigate to the Device Management -> Capabilities section and click on the "+" sign to add new capabilities like Soil pH and Soil Moisture
+1.	Open the browser and navigate to the IoT Service Cockpit URL and log on with the tenant user credentials, provided by the instructor  
+	![](images/02.png)
+
+1.	Use the main menu to navigate to the Device Management -> Capabilities section and click on the "+" sign to add new capabilities like Soil pH and Soil Moisture  
 	![](images/03.png)
-1. In the **General information** section enter Name as Soil_pH and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
-|Parameter|Value|
-|---------|-----|
-|Name|Soil\_pH|
-|Data Type|float|
-|Unit Of Measure|pH|
-![](images/04.png)
-1.	Once again navigate to Capabilities section and click on the "+" sign to add the second capability Soil_Moisture.
-![](images/05.png)   
-1. In the **General information** section enter Name as Soil_Moisture and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
-|Parameter|Value|
-|---------|-----|
-|Name|Soil\_Moisture|
-|Data Type|float|
-|Unit Of Measure|%|
-![](images/06.png)
-1.	Once again navigate to Capabilities section and click on the "+" sign to add the command Water_Alert.   
-1. In the **General information** section enter Name as Water_Alert and in the Properties section enter the following information and click on **Create**. Ensure the capability is created successfully
-|Parameter|Value|
-|---------|-----|
-|Name|Water\_alert|
-|Data Type|string|
-![](images/08.png)
-1. Navigate toe Device Management-> Sensor Types and click on the "+" sign to add a sensor type for the Soil Sensor Type.
+
+1. In the **General information** section enter **Name** as **Soil_pH** and in the **Properties** section enter the following information and click on **Create**. Ensure the capability is created successfully
+
+	| Parameter | Value    |
+	| --------- | -------- |
+	| Name | Soil \_pH     |
+	| Data Type | float    |
+	| Unit Of Measure | pH |
+	![](images/04.png)
+
+1.	Once again navigate to **Capabilities** section and click on the "**+**" sign to add the second capability **Soil_Moisture**  
+	![](images/05.png)   
+
+1. In the **General information** section enter **Name** as **Soil_Moisture** and in the **Properties** section enter the following information and click on **Create**. Ensure the capability is created successfully
+
+	| Parameter | Value      |
+	| --------- | ---------- |
+	| Name | Soil \_Moisture |
+	| Data Type | float      |
+	| Unit Of Measure | %    |
+	![](images/06.png)
+
+1.	Once again navigate to **Capabilities** section and click on the "**+**" sign to add the command Water_Alert  
+
+1. In the **General information** section enter **Name** as **Water_Alert** and in the **Properties** section enter the following information and click on **Create**. Ensure the capability is created successfully
+
+	| Parameter | Value   |
+	| --------- | ------- |
+	| Name | Water\_alert |
+	| Data Type | string  |
+	![](images/08.png)
+
+1. Navigate to **Device Management -> Sensor Types** and click on the "**+**" sign to add a sensor type for the Soil Sensor Type  
 ![](images/09.png)
-1. In the **General information** section enter Name as Soil_SensorTypeXX, where XX is the group number and in the Capabilities section enter and add the earlier created capabilities.
-|Capability|Type|
-|---------|-----|
-|Soil_pH|measure|
-|Soil_Moisture|measure|
-|Water_Alert|command|
-![](images/10.png)
-![](images/11.png)
-Click on **Create**. Ensure the Sensor Type is created successfully.
+
+1. In the **General information** section enter Name as Soil_SensorTypeXX, where XX is your workstation ID and in the **Capabilities** section enter and add the earlier created capabilities
+
+	| Capability | Type       |
+	| --------- | ----------- |
+	| Soil_pH | measure       |
+	| Soil_Moisture | measure |
+	| Water_Alert | command   |
+	![](images/10.png)
+	![](images/11.png)
+	
+	Click on **Create**. Ensure the Sensor Type is created successfully
 
 1. Congratulations! You have successfully created a new data model.
 
@@ -106,20 +119,21 @@ Each device exchanges data with a specific protocol (for example: MQTT in this e
 	![](images/12.png)
 
 1.	In the **General Information** section, enter the following information and click on **Create**
-|Parameter|Value|
-|---------|-----|
-|Name|Paho\_Client\_XX |
-|Gateway|MQTT Network|
-|Alternate ID||
 
-	>NOTE: Ignore the Alternate ID as it's optional and is filled on Create. This would be required at later steps to be provided in Paho Client as well.  
+	| Parameter | Value |
+	| --------- |----- |
+	| Name | Paho\_Client\_XX |
+	| Gateway |MQTT Network |
+	| Alternate ID | \<leave it blank\> |
+
+	>NOTE: Ignore the Alternate ID as it's optional and is filled on Create. This would be required at later steps to be provided in Paho Client as well    
 
 	![](images/13.png)
 
 1.	In the new device, Sensor tab click on the "**+**" sign to create a new sensor  
 	![](images/14.png)
 
-1.	In the General Information section, enter a name such as "**Soil_Sensor**", select Sensor Type you have created earlier (i.e. Soil_SensorTypeXX, where **XX** must be replaced with your group ID) and ignore the Alternate ID as it's optional. This Soil_Sensor automatically provides Soil_pH, Soil_Moisture and it also supports an alert: these are the capabilities we have previously defined. Once done click on **Add**  
+1.	In the General Information section, enter a name such as "**Soil_Sensor**", select Sensor Type you have created earlier (i.e. Soil\_SensorTypeXX, where **XX** must be replaced with your workstation ID) and ignore the Alternate ID as it's optional. This Soil\_Sensor automatically provides Soil\_pH, Soil\_Moisture and it also supports an alert: these are the capabilities we have previously defined. Once done click on **Add**  
 	![](images/15.png)
 
 1.	The new sensor is created and you should be able to see the **Soil_Sensor** under the **Sensors** tab of the Paho\_Client\_XX device onboarded earlier  
@@ -127,15 +141,20 @@ Each device exchanges data with a specific protocol (for example: MQTT in this e
 
 1. Be sure that your Paho Client device is selected, choose the **Certificate** tab and click on **Generate Certificate**  
 	![](images/17.png)
+
 1. Choose the Certificate Type **P12** and click **Generate**  
 	![](images/18.png)
+
 1. This will trigger a popup window providing you with a secret key which you must copy and save in notepad. Then click **OK**  
 	![](images/19.png)
+
 1. You can also see the downloaded certificate *Paho\_Client\_XX-device\_certificate.p12* in the Chrome browser status bar. Click on the small down arrow and choose **Show in folder**  
 	![](images/20.png)
 
+
 1. This will make you to understand where the certificate is located. Please keep in mind this location since it will be used in the next section  
 	![](images/20a.png)
+
 1. Congratulations! You have successfully onboarded a new device and a new sensor.
 
 
@@ -144,6 +163,7 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 
 1.	Launch the **MQTT Paho Client**, it should be located under the *C:\Student\PahoClient* folder  
 ![](images/21.png)
+
 1. Click on **Run** in case you get the security warning  
 	![](images/22.png)
 
@@ -151,10 +171,11 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 	![](images/23.png)
 
 1.	Configure the **MQTT** tab of **connection1** with this information
-| Parameter |Value |
-| --------- |----- |
-| Server URI | `ssl://<host_name>:8883` where **\<host\_name\>** is the host part in the cockpit  URL |
-| Client ID | The AlternateID of the Device Paho_Client_XX |
+	
+	| Parameter | Value |
+	| --------- | ----- |
+	| Server URI | `ssl://<host_name>:8883` where **\<host\_name\>** is the host part in the cockpit  URL |
+	| Client ID | The AlternateID of the Device Paho\_Client\_XX |
 
 	![](images/24.png)
 
@@ -179,10 +200,10 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 1.	Status should turn to **Connected** as shown in the picture  
 	![](images/31.png)
 
-1.	In the **Publish** section, enter the topic `measures/alternateid` replace `alternateid` is the Alternate ID of the device  
+1.	In the **Publish** section, enter the topic `measures/<alternate_id>` replacing `alternate_id` with the **Alternate ID** of the device  
 	![](images/32.png)
 
-1. Use the default settings for QOS
+1. Use the default settings for **QOS**
 
 1. Copy the following JSON script and paste it in a text editor
 
@@ -198,7 +219,7 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 	}
 	```
 
-1. Replace the **<<< Sensor Alternate ID >>>** with the **Alternate ID** you can read by going on your **Soil_Sensor** in your **Paho_Client_XX** device 
+1. Replace the **<<< Sensor Alternate ID >>>** with the **Alternate ID** you can read by going on your **Soil\_Sensor** in your **Paho\_Client\_XX** device  
 	![](images/33.png)
 
 1. Then go to **Sensor Types -> Soil_SensorTypeXX**  
@@ -213,7 +234,7 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 1. A new line is added to the history on the right  
 	![](images/37.png)
 
-1. Repeat this step several times, each time by changing the values for Soil_pH and Soil_Moisture in the  measures section of the JSON file  
+1. Repeat this step several times, each time by changing the values for Soil\_pH and Soil\_Moisture in the  measures section of the JSON file  
 	![](images/38.png)
 
 1. At the end you should have a history with several different pubblications  
