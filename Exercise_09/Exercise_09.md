@@ -1,8 +1,8 @@
 <table width="100%" border=>
+<tr><td colspan=2><img src="images/spacer.png"></td></tr>
 <tr><td colspan=2><h1>EXERCISE 09 - Bring your own model</h1></td></tr>
 <tr><td><h3>SAP Partner Workshop</h3></td><td><h1><img src="images/clock.png"> &nbsp;30 min</h1></td></tr>
 </table>
-
 
 ## Description
 In this exercise you get to experience how easy it is to deploy your machine learning models using SAP Leonardo Machine Learning Foundation services. You will learn how to use the SAP ML Endpoints provided in your service key, that you created for your ML Foundation Service instance. 
