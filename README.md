@@ -11,7 +11,7 @@
 ### DAY 1
 
 - [Exercise\_01 - End to End scenario using MQTT and Gateway Cloud](Exercise_01/Exercise_01.md)
-- [Exercise\_02 - {** Work in progress **} Installing and configuring Gateway Edge for MQTT protocol](Exercise_02/Exercise_02.md)
+- [Exercise\_02 - Installing and configuring Gateway Edge for MQTT protocol](Exercise_02/Exercise_02.md)
 
 ### DAY 2
 

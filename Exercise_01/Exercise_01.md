@@ -65,7 +65,7 @@ Centralized Device data model provides the schema of device related configuratio
 
 	| Parameter | Value    |
 	| --------- | -------- |
-	| Name | Soil \_pH     |
+	| Name | Soil\_pH     |
 	| Data Type | float    |
 	| Unit Of Measure | pH |
 	
@@ -78,7 +78,7 @@ Centralized Device data model provides the schema of device related configuratio
 
 	| Parameter | Value      |
 	| --------- | ---------- |
-	| Name | Soil \_Moisture |
+	| Name | Soil\_Moisture |
 	| Data Type | float      |
 	| Unit Of Measure | %    |
 	
@@ -98,7 +98,7 @@ Centralized Device data model provides the schema of device related configuratio
 1. Navigate to **Device Management -> Sensor Types** and click on the "**+**" sign to add a sensor type for the Soil Sensor Type  
 ![](images/09.png)
 
-1. In the **General information** section enter Name as Soil_SensorTypeXX, where XX is your workstation ID and in the **Capabilities** section enter and add the earlier created capabilities
+1. In the **General information** section enter **Name** as **Soil_SensorTypeXX**, where **XX** is your workstation ID and in the **Capabilities** section enter and add the earlier created capabilities
 
 	| Capability | Type       |
 	| --------- | ----------- |
