@@ -174,7 +174,7 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 	|---------|-----|
 	|Name|gh_climate_device_XX|
 	|Gateway|Rest Network|
-  |Alternate ID|simply leave it blank|
+	|Alternate ID|simply leave it blank|
 
 	replacing **XX** with your workstation ID; then click on **Create**. This way you are creating a new device named gh_climate_device_XX which is going to use the REST Network as a gateway.  
 
