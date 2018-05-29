@@ -5,12 +5,12 @@
 
 
 ## Description
-This document provides you with the exercises for the hands-on session on SAP Cloud Platform Internet of Things. This scenario will help you to go through the following activities:
+This document provides you with the steps for the hands-on session on SAP Cloud Platform Internet of Things. This scenario will help you to go through the following activities:
 
-* Creating Data Model
-* Device on boarding with Gateway Cloud using MQTT protocol.
+* Creating Device Data Model
+* Device onboarding with Gateway Cloud using MQTT protocol.
 * Sending Data with Paho MQTT Client
-* Consume Data via IoT Services Cockpit
+* Consume Data via IoT Service Cockpit
 
 >NOTE: Use Google Chrome browser.
 
@@ -18,21 +18,21 @@ This document provides you with the exercises for the hands-on session on SAP Cl
 ## Target group
 
 * Developers
-* People interested in SAP Leonardo and Machine Learning
+* People interested in SAP Leonardo and IoT
 
 
 ## Goal
 
-The goal of this exercise is to create a new data model in the IoT Service cockpit, to onboard a new device and a new sensor with SAP Gateway Cloud using MQTT protocol, to send data with Paho MQTT Client and finally to consume them via IoT Services Cockpit and APIs
+The goal of this exercise is to create a new device data model in the IoT Service cockpit, to onboard a new device and a new sensor with SAP Gateway Cloud using MQTT protocol, to send data with Paho MQTT Client and finally to consume them via IoT Service Cockpit
 
 
 
 ## Prerequisites
 
-Here below are prerequisites for this exercise.
+Below are some of the prerequisites for this exercise.
 
 * An SAP IoT Service system. It will be provided by your instructor
-* A remote desktop connection app to access the remote system
+* A Remote Desktop Connection app to access the remote system. It will be provided by your instructor
 
 
 ## Steps
