@@ -159,7 +159,6 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 	  "name": "gh_climate_sensor_typ_XX"
  }
  ```
-
  ![](images/015.png)
 
 1. Log On to the **IoT Service Cockpit URL** with the credentials provided by the instructor  
