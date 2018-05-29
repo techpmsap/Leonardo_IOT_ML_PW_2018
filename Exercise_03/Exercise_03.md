@@ -183,7 +183,7 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 1.	Remaining on this device, in the **Sensor** tab click on "**+**" to add a new sensor to it  
 	![](images/019.png)
 
-1.	In the **General Information** tab, enter
+1.	In the **General Information** tab, enter replacing **XX** with your workstation ID; then click on **Add**  
 
 	|Parameter|Value|
 	|---------|-----|
@@ -191,19 +191,18 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 	|Sensor Type|gh_climate_sensor_typ_XX|
 	|Alternate ID|simply leave it blank|
 
-	replacing **XX** with your workstation ID; then click on **Add**  
+ ![](images/020.png)
 
-	![](images/020.png)
-
-  The device with the sensor is created
+1. The device with the sensor is created
 	![](images/021.png)
 
-1.	Go to the **Certificate** tab and click on the **Generate Certificate** button  
-
+1. Go to the **Certificate** tab and click on the **Generate Certificate** button  
 	![](images/022.png)
 
 1.	Choose **p12** as the **Certificate Type** and click **Generate**  
-	![](images/023.png). Save the certificate on your machine paying attention to the place where you are putting it
+	![](images/023.png).
+
+1. Save the certificate on your machine paying attention to the place where you are putting it
 
 1.	Copy the secret key and paste it in a text editor because it will be required later in the exercise. Once done, click on **Ok** to close the window  
 	![](images/024.png)
