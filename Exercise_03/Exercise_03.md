@@ -160,7 +160,7 @@ Each device exchanges data with a specific protocol (for example: REST in this e
  }
  ```
 
- 	![](images/015.png)
+ ![](images/015.png)
 
 1. Log On to the **IoT Service Cockpit URL** with the credentials provided by the instructor  
 	![](images/016.png)
