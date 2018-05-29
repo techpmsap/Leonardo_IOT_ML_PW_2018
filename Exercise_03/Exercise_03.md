@@ -65,7 +65,7 @@ The IoT cockpit is the user interface of the solution and provides access to var
 
 Before moving forward let's check up if all the prerequisites are in place for the completion of the entire exercise.
 
-1. Download the [Exercise\_03\_Support\_Files.zip](files/Exercise_03_Support_Files.zip) file
+1. Download the [Exercise\_03\_Support\_Files.zip](files/Exercise_03_Support_Files.zip?raw=true) file
 
 1. Extract the content of this file in a proper location on your machine using the password provided by your instructor
 
@@ -141,7 +141,7 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 1.	Choose the **POST** request and click on **Try it out**  
 	![](images/014.png)
 
-1.	Copy the following JSON script, which defines a new Sensor type with the name gh_climate_sensor_typ_XX (where XX must be replaced with your group number provided by the instructor). Replace **<<< Temperature Capability ID >>>** with the Temperature capability ID
+1.	Copy the following JSON script, which defines a new Sensor type with the name **gh\_climate\_sensor\_typ\_XX** (where **XX** must be replaced with your group number provided by the instructor). Replace **<<< Temperature Capability ID >>>** with the Temperature capability ID
 
  you have noted down in the previous steps. Once done paste the script in the **Example Value** text area and click **Execute**
 
@@ -171,11 +171,11 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 
 	|Parameter|Value|
 	|---------|-----|
-	|Name|gh_climate_device_XX|
+	|Name|gh\_climate\_device\_XX|
 	|Gateway|Rest Network|
 	|Alternate ID|simply leave it blank|
 
-	replacing **XX** with your workstation ID; then click on **Create**. This way you are creating a new device named gh_climate_device_XX which is going to use the REST Network as a gateway.  
+	replacing **XX** with your workstation ID; then click on **Create**. This way you are creating a new device named **gh\_climate\_device\_XX** which is going to use the REST Network as a gateway.  
 
 	![](images/018.png)
 
@@ -186,8 +186,8 @@ Each device exchanges data with a specific protocol (for example: REST in this e
 
 	|Parameter|Value|
 	|---------|-----|
-	|Name|gh_climate_sensor_XX|
-	|Sensor Type|gh_climate_sensor_typ_XX|
+	|Name|gh\_climate\_sensor\_XX|
+	|Sensor Type|gh\_climate\_sensor\_typ\_XX|
 	|Alternate ID|simply leave it blank|
 
  ![](images/020.png)
@@ -281,14 +281,14 @@ At this point we need in some way to install the certificate we have downloaded 
 ### <a name="sending-messages"></a> Sending messages via REST using Postman
 
 1. If you have Chrome and/or Postman open, please close all windows before proceeding. Then open a new Chrome browser and navigate to <chrome://apps> and Click on **Postman**
-	![](images/46.png)
+	![](images/046.png)
 
 1. Choose **POST** as new request type and enter as URL the line
 
 	```
 	https://<host_name>/iot/gateway/rest/measures/<device_alternate_id>
 	```
-replacing **\<host\_name\>** with the host name of your IoT service and **device_alternate_id** with your device gh_climate_device_XX alternate id as seen in the IoT service cockpit
+replacing **\<host\_name\>** with the host name of your IoT service and **\<device\_alternate\_id\>** with the alternate ID of your device **\<gh\_climate\_device\_XX\>** as seen in the IoT service cockpit
 	![](images/047.png)
 
 1. In the **Authorization** tab Choose **NoAuth** as **Type**  
@@ -303,10 +303,10 @@ replacing **\<host\_name\>** with the host name of your IoT service and **device
 	 {"capabilityAlternateId":[<Temperature_Alternate_ID>,"measures":[20],"sensorAlternateId":"<Sensor_alternate_ID>"}
 	 ```
 
-1. Replace **\<Sensor\_alternate\_ID\>** with the alternate ID of your sensor gh_climate_sensor_XX.  
+1. Replace **\<Sensor\_alternate\_ID\>** with the alternate ID of your sensor **\<gh\_climate\_sensor\_XX\>**.  
  ![](images/050.png)
 
-1. and replace **<Temperature_Alternate_ID>** with the alternate ID of your Temperature capability, found under your sensor gh_climate_sensor_typ_XX in **Sensor Types**.
+1. and replace **<Temperature_Alternate_ID>** with the alternate ID of your Temperature capability, found under your sensor **gh\_climate\_sensor\_typ\_XX** in **Sensor Types**.
 Then click on **Send**
 	![](images/051.png)
 
@@ -330,14 +330,14 @@ Then click on **Send**
 ### <a name="consuming-sensor-data"></a> Consuming and viewing sensor data
 This section explains various ways we can consume and visualize the measurements which are sent to IoT Gateway Cloud.
 
-1.	Open the Internet of Things Service Cockpit with your user credentials. In the main menu, go to Devices. Select your device (gh_climate_device_XX) and click on the Data Visualization tab  
+1.	Open the Internet of Things Service Cockpit with your user credentials. In the main menu, go to Devices. Select your device (**gh\_climate\_device\_XX**) and click on the **Data Visualization** tab  
 	![](images/055.png)
 
 1.	For the 3 drop down list select the following parameters, replacing **XX** with your workstation ID;
 
 	|Parameter|Value|
 	|---------|-----|
-	|Sensor| gh_climate_sensor_XX|
+	|Sensor| gh\_climate\_sensor\_XX|
 	|Capability| Temperature |
 	|Properties| Temperature |
 
@@ -356,7 +356,7 @@ This section explains various ways we can consume and visualize the measurements
 	```
 where **\<host\_name\>** is the host name of your IoT Service and **\<device\_ID\>** can be read in the device page under the device name
 
-	>NOTE: Please note down the device\_ID and the host\_name used here, since this information will be required at a later part of the exercise  
+	>NOTE: Please note down the **device\_ID** and the **host\_name** used here, since this information will be required at a later part of the exercise  
 
 	![](images/058.png)
 
@@ -490,7 +490,7 @@ SAP Cloud Platform Business Rules allows end users to model and arrange rules in
 To simplify the number of steps involved in modelling & deploying the rule service we already created a separate project for each participant with a decision table having all the necessary conditions and results.
 Your goal here is to create a rule in the decision table to determine whether the measurement values are exceeding a threshold value. The final rule service is then deployed to make it available for the integration flow which is responsible to decide whether the Service Request workflow needs to be triggered.
 
-1. Open the configuration URL document. Documents are available inside Iflowgenerator folder. Please use the file (URLS_rktw002.TXT or URLS_rktw003.TXT) assigned to you by the instructor, with the same steps you have done at the beginning of the previous chapter and locate the Business Rules Service Tenant URL. Copy this URL and paste it in a new browser window  
+1. Open the configuration URL document. Documents are available inside Iflowgenerator folder. Please use the file (URLS\_rktw002.TXT or URLS\_rktw003.TXT) assigned to you by the instructor, with the same steps you have done at the beginning of the previous chapter and locate the Business Rules Service Tenant URL. Copy this URL and paste it in a new browser window  
 	![](images/081.png)
 
 1.  Click on the project **CPL265ParticipantXX** where **XX** is your associated workstation ID  
@@ -604,7 +604,7 @@ In this part, you will discover the CPL265 session Integration content from SAP 
 
 	|Parameter |Value                                                   |
 	|----------|--------------------------------------------------------|
-	|devicename|gh_climate_device_XX (where XX is your workstation ID |
+	|devicename|gh\_climate\_device\_XX (where XX is your workstation ID |
 	|userid    |your P-Number user, you use to access SAP Cloud Platform|
 	|deviceid  |the device ID of your device in IoT Cockpit|
 
@@ -686,7 +686,7 @@ In this section, we will confirm the successful scenario completion. This is don
 1. Click on the **Service** tab  
 	![](images/132.png)
 
-1. You should be able to see a ticket related to your **gh_climate_device_XX** device, where **XX** is your workstation ID. Click on this ticket  
+1. You should be able to see a ticket related to your **gh\_climate\_device\_XX** device, where **XX** is your workstation ID. Click on this ticket  
 	![](images/133.png)
 
 1. Here you get the content of the ticket where the Temperature Sensor violation is reported  
