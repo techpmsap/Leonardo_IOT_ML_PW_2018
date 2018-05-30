@@ -70,7 +70,7 @@ Organization and space will be automatically configured and made available durin
 
 
 ### <a name="service-instance-key"></a> Create Service Instance and Service Key for ML Foundation
-Before we continue we need to get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external applications like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your productive account. Please keep this browser window open, since you will need it in the next section.
+Before we continue we need to get a service key from the ML Foundation service. A service key enables the ML Foundation Service to be used outside the CF environment. In this exercise, you need to create such a key to be used by an external application like Swagger UI or Postman. The service key contains all the URLs and credentials (clientid and clientsecret) required for you to access the ML Foundation service running for your productive account. Please keep this browser window open, since you will need it in the next section.
 
 1.	Within your space navigate to **Services -> Service Marketplace**, then click on the **ml-foundation** tile  
 	![](images/08.png)
@@ -87,7 +87,7 @@ Before we continue we need to get a service key from the ML Foundation service. 
 1.	Click **Next**  
 	![](images/12.png)
 
-1.	Enter a name for the new instace, like **ml\_instance\_XX** where XX is your workstation ID and click **Finish**  
+1.	Enter a name for the new instance, like **ml\_instance\_XX** where XX is your workstation ID and click **Finish**  
 	![](images/13.png)
 
 1.	Click on the newly created instance  
