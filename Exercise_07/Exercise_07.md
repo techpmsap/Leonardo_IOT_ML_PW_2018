@@ -45,7 +45,7 @@ Organization and space will be automatically configured and made available durin
 |Space       |ml-trainXX (same as your user name without the +)    |
 
 
-1. Open Firefox as Chrome will use SSO for SAP Employees. Login to SAP Cloud Platform Cockpit via <https://account.hanatrial.ondemand.com/cockpit>. Login with your given e-Mail 
+1. Open Firefox as Chrome will use SSO for SAP Employees. Login to SAP Cloud Platform Cockpit via <https://account.hana.ondemand.com/cockpit>. Login with your given e-Mail 
 **ml-train+XX@sap.com**, where **XX** must be replaced by your workstation ID, and the password provided by the trainer  
 	![](images/01.png)
 
