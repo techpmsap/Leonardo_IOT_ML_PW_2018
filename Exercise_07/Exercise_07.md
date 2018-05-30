@@ -22,12 +22,6 @@ In this exercise, you’ll learn how
 The goal of this exercise is to understand how to access SAP Cloud Foundry cockpit, how to setup the ML Foundation service and how to generate a service key for accessing it from an external application.
 
 
-## Prerequisites
-  
-Here below are prerequisites for this exercise.
-
-* A trial account on the SAP Cloud Platform. You can get one by registering here <https://account.hanatrial.ondemand.com>
-
 
 ## Steps
 
