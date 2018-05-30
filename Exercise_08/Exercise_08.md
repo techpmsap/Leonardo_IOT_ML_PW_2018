@@ -7,7 +7,7 @@
 ## Description
 In this exercise you will learn how to 'fine-tune' a generic machine learning model to a custom use case. You can use this service without being a Machine Learning Expert. The base model is provided by SAP. The Retrain Service adapts the base model to a specific model using training data provided by the user: thus, the classification results for the user data-set are greatly improved compared to the generic base model.
 
-Exercise Description - SAP Leonardo ML Foundation Retrain Service
+In this exercise you will,
 
 -	Install SAP CF CLI (pre-installed - for more info on how to install CF CLI go to: <https://help.sap.com/viewer/65de2977205c403bbc107264b8eccf4b/Cloud/en-US/b8ee7894fe0b4df5b78f61dd1ac178ee.html>) 
 -	Login to SAP CF using the SAP CF CLI
