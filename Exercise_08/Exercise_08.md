@@ -136,7 +136,7 @@ In the next section, you will retrain the pre-trained Image Classification Model
 	```sh
 	cf sapml config set auth_server <your authentication URL from the service key>
 	cf sapml config set job_api https://training.eu-central-1.aws.ml.hana.ondemand.com
-	cf sapml config set retraining_image_api https://mlfproduction-retrain-image-api.cfapps.eu10.hana.ondemand.com/api/v2/image/retraining
+	cf sapml config set retraining_api https://mlfproduction-retrain-image-api.cfapps.eu10.hana.ondemand.com/api/v2/image/retraining
 	```
 
 	Enter
