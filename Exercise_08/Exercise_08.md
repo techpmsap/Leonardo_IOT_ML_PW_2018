@@ -227,7 +227,7 @@ In the next section, you will retrain the pre-trained Image Classification Model
 1. Deploy the retrained model by specifying the model name and version
 
 	```sh
-	cf sapml retraining model_deploy [MODEL_NAME] [MODEL_VERSION] -m image
+	cf sapml retraining model_deploy [MODEL_NAME] [MODEL_VERSION_NUMBER] -m image
 	```
 	![](images/18.png)
 
