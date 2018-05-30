@@ -34,7 +34,6 @@ The goal of this exercise is to understand how to access SAP Cloud Foundry cockp
   
 Here below are prerequisites for this exercise.
 
-* A trial account on the SAP Cloud Platform. You can get one by registering here <https://account.hanatrial.ondemand.com>
 * Completed previous exercises
 * A set of test images you will use for testing your retrained service. Please download the zip file from here [RetrainImages.zip](files/RetrainImages.zip?raw=true) and uncompress it in a proper folder on your machine
 * You need to create a service instance and service key for the ML foundation service in your SAP Cloud Foundry space. Please complete previous exercise before you proceed with this one.
