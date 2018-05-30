@@ -95,7 +95,7 @@ In the next section, you will retrain the pre-trained Image Classification Model
 	cf plugins
 	```
 	
-	to get the list of all the installed plugins. If you see that SAPML is already installed as in this case continue with the next steps otherwise skip them  
+	to get the list of all the installed plugins. If you see that SAPML is already installed as in this case do the next step(to uninstall) otherwise skip it  
 	![](images/04.png)
 
 1. Run the command 
