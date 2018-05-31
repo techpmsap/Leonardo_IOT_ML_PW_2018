@@ -354,7 +354,8 @@ This section explains various ways we can consume and visualize the measurements
 	```
 	https://<host_name>/iot/core/api/v1/devices/<device_ID>/measures
 	```
-where **\<host\_name\>** is the host name of your IoT Service and **\<device\_ID\>** can be read in the device page under the device name
+
+	where **\<host\_name\>** is the host name of your IoT Service and **\<device\_ID\>** can be read in the device page under the device name
 
 	>NOTE: Please note down the **device\_ID** and the **host\_name** used here, since this information will be required at a later part of the exercise  
 
