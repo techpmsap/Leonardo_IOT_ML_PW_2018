@@ -53,12 +53,13 @@ The SAP Cloud Platform Internet of Things Service enables customers and partners
 
 
 ### <a name="creating-device-data-model"></a> Creating device data model
-Centralized Device data model provides the schema of device related configurations including the data fields that will be exchanged. Default template is provided and can be downloaded from the SAP Cloud Platform Internet of Things services cockpit. If you have any deviations or additions, a new sensor type can be added to the default central data model. You can create capabilities (measures/commands). A capability can be reused since it can be assigned to multiple sensor types and each capability can have one or many properties. In the section below, using the IoT Service Cockpit, initially two capabilities("Soil pH and Moisture") and a sensor type are created. A device is then created and will have one sensor, which is of the custom sensor type.
+Centralized Device data model provides the schema of device related configurations including the data fields that will be exchanged. In order to send data to the IoT service a device data model is required. The device entity must have at least one sensor assigned to it. In case, no sensor is created in beforehand a Sensor will be automatically created during data ingestion (default behavior). A new sensor type can be added with capabilities (measures/commands). A capability can be reused since it can be assigned to multiple sensor types and each capability can have one or many properties. 
+In the section below, using the IoT Service Cockpit, *initially two capabilities("Soil pH and Moisture") are created, *then a sensor type is created and the capabilities are assigned to it. *A device is then created and will have one *sensor, which is of the custom sensor type.
 
 1.	Open the browser and navigate to the IoT Service Cockpit URL and log on with the tenant user credentials, provided by the instructor  
 	![](images/02.png)
 
-1.	Use the main menu to navigate to the Device Management -> Capabilities section and click on the "+" sign to add new capabilities like Soil pH and Soil Moisture  
+1.	Use the main menu to navigate to the **Device Management** -> **Capabilities** section and click on the **"+"** sign, to add first capability Soil pH  
 	![](images/03.png)
 
 1. In the **General information** section enter **Name** as **Soil_pH** and in the **Properties** section enter the following information and click on **Create**. Ensure the capability is created successfully
@@ -71,7 +72,7 @@ Centralized Device data model provides the schema of device related configuratio
 
 	![](images/04.png)
 
-1.	Once again navigate to **Capabilities** section and click on the "**+**" sign to add the second capability **Soil_Moisture**  
+1.	Once again navigate to **Capabilities** section and click on the "**+**" sign to add the second capability Soil_Moisture.  
 	![](images/05.png)   
 
 1. In the **General information** section enter **Name** as **Soil_Moisture** and in the **Properties** section enter the following information and click on **Create**. Ensure the capability is created successfully
