@@ -177,7 +177,7 @@ Here below are prerequisites for this exercise.
 	and click **OK**. These two property could be used for example to host the model and the serial numbers of the greenhouse thing  
 	![](images/021.png)
 
-1. Once the properties have been added click on **Save**  
+1. Once the properties have been added click on **Save** and and you should receive a message **"Property set was saved"**  
 	![](images/022.png)
 
 1. At the end you should get the following situation  
