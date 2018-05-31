@@ -146,7 +146,7 @@ Here below are prerequisites for this exercise.
 1. In the Status Values section click on the **+** symbol  
 	![](images/016.png)
 
-1. Add the property **door\_closed** (it will have automatically "boolean" as type) and click **OK**  
+1. Add the property **door\_closed** (it will automatically have "boolean" as type) and click **OK**  
 	![](images/017.png)
 
 1. At the end you should have the following situation: click on the **Save** button and you should receive a message "Property set was saved"  
