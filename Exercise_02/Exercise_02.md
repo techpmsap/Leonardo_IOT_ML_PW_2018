@@ -146,7 +146,7 @@ The Internet of Things service cockpit is the user interface of the Internet of 
 1. Copy this line and paste it in your editor (Notepad++ is recommended)
 
 	```json
-	{"capabilityAlternateId":[""],"measures":[30],"sensorTypeAlternateId":""}
+	{"capabilityAlternateId":[""],"measures":[300],"sensorTypeAlternateId":""}
 	```
 
 	![](images/27.png)
@@ -215,7 +215,8 @@ Each device exchanges data with a specific protocol (for example: MQTT in this e
 1. This is what you should see at the end of this process
 	![](images/46.png)
 
-1.	Click on the **Data Visualization** tab, choose the new sensor, the new capability and the new measure and you should see the only measure of 30 we have sent to the console  (30 could not be a meaningful value for CO2, we have just used this value for test)	![](images/47.png)
+1.	Click on the **Data Visualization** tab, choose the new sensor, the new capability and the new measure and you should see the only measure of 300 we have sent to the console  
+	![](images/47.png)
 
 1. Congratulations! You have successfully onboarded a new device and a new sensor.
 
@@ -223,7 +224,7 @@ Each device exchanges data with a specific protocol (for example: MQTT in this e
 ### <a name="mqtt-paho"></a> Sending messages via MQTT using PAHO client
 In this step, we will send the data from Device Simulator that supports MQTT protocol. We have already on-boarded this simulator device during previous steps. Once we send the data, it would be received by Internet of Things Gateway Edge, which will send the data to IoT Core Services and data would be visible  in the IoT services cockpit and vis APIs.
 
-1.	Go to your MQTT PAHO Client and modify the Message options under Publication section by changing the temperature value. For example, since you set it to 30 with the first message, you can think to increase it to 31. Once done click on the **Publish** button  
+1.	Go to your MQTT PAHO Client and modify the Message options under Publication section by changing the temperature value. For example, since you set it to 300 with the first message, you can think to increase it to 350. Once done click on the **Publish** button  
 
 1. Do this several times so that you have several messages with different temperature values. Once done you should see different messages in the History tab of Paho Client  
 	![](images/48.png)
