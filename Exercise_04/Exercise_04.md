@@ -55,6 +55,72 @@ Here below are prerequisites for this exercise.
 
 
 
+### <a name="create-device-model"></a> Create the device model
+The Thing that we will create later, in order to work properly, needs to be attached to a device. In this section we will create it in the IoT Service cockpit, together with a sensor and some properties.
+
+1. With Chrome, navigate to the **IoT Service cockpit** address provided by your instructor and login with the related credentials  
+	![](images/041.png)
+
+1. Select **Capabilities** and click on the **+** sign to create a new Capability  
+	![](images/042.png)
+
+1. Enter the name **gh\_climate\_ps\_xx** where xx must be replaced with your workstation ID. Then click on the **+** sign to create a new property  
+	![](images/043.png)
+
+1. Enter
+
+	| Property Name| Property Data Type |
+	| --------- | ----- |
+	| temperature | float |
+
+	and click again on the **+** sign to add again a new property  
+	![](images/044.png)
+
+1. Enter the following set of new properties and click on **Create**
+
+	| Property Name| Property Data Type |
+	| --------- | ----- |
+	| temperature | float |
+	| humidity | float |
+	| light | integer |
+	| door\_closed | boolean |
+	
+	![](images/045.png)
+
+1. Select the **Sensor Types** item in the left-hand menu and click on the **+** sign to create a new sensor type  
+	![](images/046.png)
+
+1. Enter **gh\_climate\_sensor\_typ\_xx** for the **Name** (remember to replace **xx** with your workstation ID), select the **gh\_climate\_ps\_xx** capability you have created earlier and set **measure** as its Type. Then click on **Create**  
+	![](images/047.png)
+
+1. On the left-hand menu, select **Devices** and click again on the **+** sign to create a new Device  
+	![](images/048.png)
+
+1. Enter the following properties and click on **Create**
+
+	| Parameter| Value |
+	| --------- | ----- |
+	| Name | gh\_climate\_device\_xx (remember to replace **xx** with your workstation ID)|
+	| Gateway | REST Network |
+	![](images/049.png)
+
+1. Select the **Sensors** tab and click on the **+** sign to add a new sensor  
+	![](images/050.png)
+
+1. Enter the following properties and click on **Add**
+
+	| Parameter| Value |
+	| --------- | ----- |
+	| Name | gh\_climate\_sensor\_xx |
+	| Sensor Type | gh\_climate\_sensor\_typ\_xx |
+	(remember to replace **xx** with your workstation ID)
+	![](images/051.png)
+
+1. Your device has been successfully created.  
+	![](images/052.png)
+
+
+
 ### <a name="create-package"></a> Create your own Package for Greenhouses
 	
 1. Open your browser and navigate to the IoT Application Enablement URL provided by your instructor. Logon using the provided credentials paying attention to not select the **Remember me** checkbox  
@@ -99,7 +165,7 @@ Here below are prerequisites for this exercise.
 1. Once you have selected your package and you have verified that it's the correct one, click on the "**+**" symbol in the master view. This will allow you to create a new property set  
 	![](images/010.png)
 
-1. Enter 
+1. Enter the same name you used for the property set when you created your capability in IoT service cockpit. If you don't do this, then you won't be able to attach your thing with the device, If you have followed the name convention for creating the capability then this must be **gh\_climate\_ps\_xx**. Enter 
 
 	| Parameter | Value|
 	| --- | --- |
@@ -259,72 +325,6 @@ In this section you are going to learn how to create a Thing using the SAP IoT A
 1. Switch to the **Measured Values** tab, expand the temperature property and enter **[1,10,30,45]** for the 4 thresholds values; then click **Save**  
 	![](images/040.png)
 
-
-
-
-### <a name="create-device-model"></a> Create the device model
-The created Thing, in order to work properly, needs to be attached to a device. We don't have yet this device so in this chapter we are going to create it in the IoT Service cockpit, together with a sensor and some properties.
-
-1. With Chrome, navigate to the **IoT Service cockpit** address provided by your instructor and login with the related credentials  
-	![](images/041.png)
-
-1. Select **Capabilities** and click on the **+** sign to create a new Capability  
-	![](images/042.png)
-
-1. Enter the same name you used for the property set when you created your Thing. If you don't do this, then you won't be able to attach your thing with the device, because the metching will not be possible. If you have followed the naming convention used in this exercise, this name should be **gh\_climate\_ps\_xx** where xx must be replaced with your workstation ID. Then click on the **+** sign to create a new property  
-	![](images/043.png)
-
-1. Enter
-
-	| Property Name| Property Data Type |
-	| --------- | ----- |
-	| temperature | float |
-
-	and click again on the **+** sign to add again a new property  
-	![](images/044.png)
-
-1. Enter the following set of new properties and click on **Create**
-
-	| Property Name| Property Data Type |
-	| --------- | ----- |
-	| temperature | float |
-	| humidity | float |
-	| light | integer |
-	| door\_closed | boolean |
-	
-	![](images/045.png)
-
-1. Select the **Sensor Types** item in the left-hand menu and click on the **+** sign to create a new sensor type  
-	![](images/046.png)
-
-1. Enter **gh\_climate\_sensor\_typ\_xx** for the **Name** (remember to replace **xx** with your workstation ID), select the **gh\_climate\_ps\_xx** capability you have created earlier and set **measure** as its Type. Then click on **Create**  
-	![](images/047.png)
-
-1. On the left-hand menu, select **Devices** and click again on the **+** sign to create a new Device  
-	![](images/048.png)
-
-1. Enter the following properties and click on **Create**
-
-	| Parameter| Value |
-	| --------- | ----- |
-	| Name | gh\_climate\_device\_xx (remember to replace **xx** with your workstation ID)|
-	| Gateway | REST Network |
-	![](images/049.png)
-
-1. Select the **Sensors** tab and click on the **+** sign to add a new sensor  
-	![](images/050.png)
-
-1. Enter the following properties and click on **Add**
-
-	| Parameter| Value |
-	| --------- | ----- |
-	| Name | gh\_climate\_sensor\_xx |
-	| Sensor Type | gh\_climate\_sensor\_typ\_xx |
-	(remember to replace **xx** with your workstation ID)
-	![](images/051.png)
-
-1. Your device has been successfully created.  
-	![](images/052.png)
 
 
 
