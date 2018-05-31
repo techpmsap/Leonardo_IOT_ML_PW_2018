@@ -123,13 +123,13 @@ Here below are prerequisites for this exercise.
 	| Thresholds | - select all thresholds options - |
 	![](images/013.png)
 
-1. Click again on the "**+**" sign to add a couple of other measures. Add the humidity with these parameters and click **OK**
+1. Click again on the "**+**" sign to add a couple of other measures. Add humidity with these parameters and click **OK**
 
 	| Parameter | Value|
 	| --- | --- |
 	| Name| humidity |
 	| Unit of Measure | % |
-	| Type | float |
+	| Type | Float |
 	| Thresholds | - select all thresholds options - |
 	![](images/014.png)
 	
