@@ -23,7 +23,7 @@ This document provides you with the steps for the hands-on session on SAP Cloud 
 
 ## Goal
 
-The goal of this exercise is to create a new device data model in the IoT Service cockpit, to onboard a new device and a new sensor with SAP Gateway Cloud using MQTT protocol, to send data with Paho MQTT Client and finally to consume them via IoT Service Cockpit
+The goal of this exercise is to create a new device data model in the IoT Service cockpit, to onboard a new device with a sensor with SAP Gateway Cloud using MQTT protocol, to send data with Paho MQTT Client and finally to consume them via IoT Service Cockpit
 
 
 
@@ -32,7 +32,7 @@ The goal of this exercise is to create a new device data model in the IoT Servic
 Below are some of the prerequisites for this exercise.
 
 * An SAP IoT Service system. It will be provided by your instructor
-* A Remote Desktop Connection app to access the remote system. It will be provided by your instructor
+* A Remote Desktop Connection app to access the remote system. Credentials to logon will be provided by your instructor
 
 
 ## Steps
@@ -47,13 +47,13 @@ Below are some of the prerequisites for this exercise.
 
 
 ### <a name="introduction"></a> Introduction
-The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. IoT Services provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides on-premise IoT edge processing and also gateway cloud which does centralized cloud based processing. The **IoT cockpit** is the user interface of the solution and provides access to various functions. It is the main interface for users to interact with the Internet of Things core service. It can be used for creating users and tenants, for creating device data models, for device onboarding and for adding new networks. It can also be used to deploy interceptors, retrieve network logs, visualize the data which are being ingested via IoT devices/sensors.  
+The SAP Cloud Platform Internet of Things Service enables customers and partners to develop, customize, and operate IoT business applications in the cloud. IoT Services provides Lifecycle management at scale for IoT devices from onboarding to decommissioning. It also provides a way to securely connect to remote devices over a broad variety of IoT protocols. It provides gateway Edge which provides on-premise IoT edge processing and also gateway cloud which does centralized cloud based processing. The **IoT cockpit** is the user interface of the solution and provides access to various functions. It is the main interface for users to interact with the Internet of Things core service. It can be used for creating users and tenants, for creating device data models, for device onboarding and decomissioning, for adding new networks and to visualize the data which are being ingested via IoT devices/sensors.  
 	![](images/01.png)
 
 
 
 ### <a name="creating-device-data-model"></a> Creating device data model
-Centralized Device data model provides the schema of device related configurations including the data fields that will be exchanged. Default template is provided and can be downloaded from the SAP Cloud Platform Internet of Things services cockpit. If you have any deviations or additions, a new sensor type can be added to the default central data model. In the below steps, we will extend this default central device data model with the new fields "Soil pH and Moisture" that we will be getting from the device simulator. In this section, you will create few capabilities (measures and commands). A capability can be reused since it can be assigned to multiple sensor types: each capability can have one or many properties.
+Centralized Device data model provides the schema of device related configurations including the data fields that will be exchanged. Default template is provided and can be downloaded from the SAP Cloud Platform Internet of Things services cockpit. If you have any deviations or additions, a new sensor type can be added to the default central data model. You can create capabilities (measures/commands). A capability can be reused since it can be assigned to multiple sensor types and each capability can have one or many properties. In the section below, using the IoT Service Cockpit, initially two capabilities("Soil pH and Moisture") and a sensor type are created. A device is then created and will have one sensor, which is of the custom sensor type.
 
 1.	Open the browser and navigate to the IoT Service Cockpit URL and log on with the tenant user credentials, provided by the instructor  
 	![](images/02.png)
