@@ -203,7 +203,7 @@ In this step, we will send the data from Device Simulator that supports MQTT pro
 	{
 	"capabilityAlternateId":[
 		"<<< Soil_pH Capability Alternate ID >>>",
-		"<<< Soil_Moisture Capability Alternate ID >>>",
+		"<<< Soil_Moisture Capability Alternate ID >>>"
 		],
 	"measures":[7,35],
 	"sensorAlternateId":"<<< Sensor Alternate ID >>>"
