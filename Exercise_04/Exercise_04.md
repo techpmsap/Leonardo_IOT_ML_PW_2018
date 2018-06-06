@@ -40,10 +40,10 @@ Here below are prerequisites for this exercise.
 ## Steps
 
 
+1. [Create the device model](#create-device-model)
 1. [Create your own Package for Greenhouses](#create-package)
 1. [Create the Thing Model](#thing-model)
 1. [Create a Thing](#create-thing)
-1. [Create the device model](#create-device-model)
 1. [Connect the thing with the device](#connect-thing-with-device)
 1. [Set up Postman to call APIs](#postman)
 1. [Build a SAPUI5 app with SAP Web IDE](#build-app)
@@ -123,7 +123,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 
 ### <a name="create-package"></a> Create your own Package for Greenhouses
 	
-1. Open your browser and navigate to the IoT Application Enablement URL provided by your instructor. Logon using the provided credentials paying attention to not select the **Remember me** checkbox  
+1. Open your browser and navigate to the IoT Application Enablement URL provided by your instructor. Logon using the provided credentials paying attention **do not select the Remember me** checkbox  
 	![](images/001.png)
 
 1. Do not save the password in your browser  
@@ -283,7 +283,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 1. All the propeties you defined earlier are automatically added. Click on the **Save** button at the bottom of the page  
 	![](images/032.png)
 
-1. Get a picture for your greenhouse by searching it on the web or by right clicking on this [small\_greenhouse.jpg](files/small_greenhouse.jpg?raw=true) link and saving the image on your machine
+1. Get a picture for your greenhouse by searching it on the web or by right clicking on this [greenhouse.jpg](files/small_greenhouse.jpg?raw=true) link and saving the image on your machine
 
 1. Click on the **Image** tab and press "**+**" to add a new image  
 	![](images/033.png)
@@ -331,7 +331,7 @@ In this section you are going to learn how to create a Thing using the SAP IoT A
 ### <a name="connect-thing-with-device"></a> Connect the thing with the device
 We can now connect the Thing with the created device.
 
-1. Go back to the **IoT Application Enablement cockpit**, select the **greenhouse\_xx** thing (where **xx** is your workstation ID) from the Things tab and click on the **Connect** button on the top right corner  
+1. Ensure you are in the **greenhouse\_xx** thing (where **xx** is your workstation ID), then click on the **Connect** button on the top right corner  
 	![](images/053.png)
 
 1. First set the **Device ID** by clicking on the drop down menu  
