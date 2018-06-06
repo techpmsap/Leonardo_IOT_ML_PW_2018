@@ -633,11 +633,17 @@ At this point we need in some way to install the certificate we have downloaded 
 As final step for this exercise we can send some data to the device using Postman, to see if data is really visible in the SAPUI5 application. Of course this is just a simulation because real data should come to the device from the sensors, but since we don't have physical sensors, we can simply emulate them using REST requests.
 However before we can proceed, we need to gather some information from the IoT Services cockpit. What we need is the Device Alternate ID, the Capability Alternate ID and the Sensor Alternate ID of our IoT configuration.
 
-1. Go to the IoT Services cockpit and select **Devices** on the left-hand menu. Filter for your device and select it. On the right page you can read the **Device Alternate ID** in the header and the **Sensor Alternate ID** in the detail row. Note down these two IDs  
-	![](images/132.png)
+1. Go to the IoT Service cockpit Note down the Host name. 
+	![](images/181.png)
+
+1. Select **Devices** on the left-hand menu, on right hand page filter for your device and you can read the **Device Alternate ID** in the header. Note that down.   
+	![](images/184.png)
+	
+1. Select the Device by clicking it and in the Sensors tab, note down the **Sensor Alternate ID** for your Sensor. 
+	![](images/183.png)
 
 1. Now switch to Capabilities, filter for your capability and get on the right side the **Capability Alternate ID**. Note down this ID  
-	![](images/133.png)
+	![](images/182.png)
 
 1. Now, open Postman and **disable** the Postman Interceptor  
 	![](images/134.png)
