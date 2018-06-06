@@ -652,6 +652,7 @@ However before we can proceed, we need to gather some information from the IoT S
 
 	- Method: **POST**
 	- URL: `https://<host_name>/iot/gateway/rest/measures/<device_alternate_ID>`
+	- Click on the Header tab and enter Key as **Content-Type** Value as application/json
 	- Click on the Body tab and select the **raw** with **JSON** format
 	- In the body section enter the following JSON code
 	
@@ -664,6 +665,7 @@ However before we can proceed, we need to gather some information from the IoT S
 	```
 	
 	Of course, you need to replace **\<device\_alternate\_ID\>**, **\<capability\_alternate\_ID\>** and **\<sensor\_alternate\_ID\>** with the values gathered earlier. When finished press the **Send** button  
+	![](images/185.png)
 	![](images/135.png)
 
 1. Select the right certificate (the right one should be the one with the same your Device Alternate ID) and click **OK**  
