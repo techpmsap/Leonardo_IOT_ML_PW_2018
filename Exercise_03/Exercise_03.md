@@ -300,7 +300,7 @@ replacing **\<host\_name\>** with the host name of your IoT service and **\<devi
 1. In the **Body** tab, select **raw** mode and enter the string
 
 	 ```
-	 {"capabilityAlternateId":[<Temperature_Alternate_ID>,"measures":[20],"sensorAlternateId":"<Sensor_alternate_ID>"}
+	 {"capabilityAlternateId":["<Temperature_Alternate_ID>","measures":[20],"sensorAlternateId":"<Sensor_alternate_ID>"}
 	 ```
 
 1. Replace **\<Sensor\_alternate\_ID\>** with the alternate ID of your sensor **\<gh\_climate\_sensor\_XX\>**.  
