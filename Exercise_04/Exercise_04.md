@@ -283,7 +283,7 @@ The Thing that we will create later, in order to work properly, needs to be atta
 1. All the propeties you defined earlier are automatically added. Click on the **Save** button at the bottom of the page  
 	![](images/032.png)
 
-1. Get a picture for your greenhouse by searching it on the web or by right clicking on this [greenhouse.jpg](files/small_greenhouse.jpg?raw=true) link and saving the image on your machine
+1. Get a picture for your greenhouse by searching it on the web or by right clicking on this [greenhouse.jpg](files/greenhouse.jpg?raw=true) link and saving the image on your machine
 
 1. Click on the **Image** tab and press "**+**" to add a new image  
 	![](images/033.png)
