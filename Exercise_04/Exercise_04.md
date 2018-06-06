@@ -643,7 +643,7 @@ However before we can proceed, we need to gather some information from the IoT S
 	![](images/183.png)
 
 1. Now switch to Capabilities, filter for your capability and get on the right side the **Capability Alternate ID**. Note down this ID  
-	![](images/182.png)
+	![](images/186.png)
 
 1. Now, open Postman and **disable** the Postman Interceptor  
 	![](images/134.png)
